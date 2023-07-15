@@ -24,7 +24,7 @@ const Card = ({ movie }) => {
     setFavorite(result);
   };
 
-  const handleAddToFavorite = (event) => {
+  const handleAddToFavorite = () => {
     setFavorite([...favorite, movie]);
   };
 
