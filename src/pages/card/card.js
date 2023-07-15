@@ -18,11 +18,8 @@ const Card = ({ movie }) => {
     router.push(`/movie/?name=${movieUrl}&movieID=${movieID}`);
   };
 
-  const handleRemoveFromFavorite = (event) => {
-    const id = event.target.parentNode.id;
-    console.log(id);
+  const handleRemoveFromFavorite = () => {
     const result = favorite.filter((singleMovie) => singleMovie !== movie);
-    console.log(result);
     setFavorite(result);
   };
 

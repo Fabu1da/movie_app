@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/search.module.css";
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import { favoriteContext } from "./_app";
 import Card from "./card/card";

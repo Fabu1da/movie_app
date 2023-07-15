@@ -29,3 +29,5 @@ good coding practices! The list, however, isn't complete so you can be a little 
 
 NOTE: You will need to get your free OMDB api key (generate at https://www.omdbapi.com/apikey.aspx). You can include it
 in the project in an `.env` file if you want but it is not a necessity.
+
+Please Create `.env.local` and name your API key to `NEXT_PUBLIC_API_KEY`
