@@ -49,7 +49,7 @@ const Card = ({ movie }) => {
           height={500}
         />
         <div className={`${styles.movieType}`}>
-          {movie.Type} ↔ {movie && movie.Year}
+          {movie && movie.Type} ↔ {movie && movie.Year}
           {!isFavorite ? (
             <button
               type="button"
