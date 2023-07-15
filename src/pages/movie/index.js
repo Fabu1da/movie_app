@@ -61,6 +61,6 @@ export async function getServerSideProps(context) {
   const data = await rsponse.json();
 
   return {
-    props: { data }, // will be passed to the page component as props
+    props: { data },
   };
 }

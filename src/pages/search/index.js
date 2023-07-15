@@ -7,7 +7,6 @@ import styles from "@/styles/search.module.css";
 const SearchPage = () => {
   const [movies, setMovies] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [loading, setLoading] = useState(true);
   const search = useSearchParams();
   const searchName = encodeURI(search.get("s"));
   const numberOfPages = Math.ceil(movies.totalResults / 10);
@@ -18,7 +17,7 @@ const SearchPage = () => {
     setCurrentPage(currentPage - 1);
   };
 
-  const handleNext = (event) => {
+  const handleNext = () => {
     if (currentPage >= numberOfPages) return;
     setCurrentPage(currentPage + 1);
   };

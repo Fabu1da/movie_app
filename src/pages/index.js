@@ -9,7 +9,7 @@ import Card from "./card/card";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Search() {
-  const { favorite, setFavorite } = useContext(favoriteContext);
+  const { favorite } = useContext(favoriteContext);
   const [search, setSearch] = useState("");
   const router = useRouter();
   const handleChange = (e) => {
