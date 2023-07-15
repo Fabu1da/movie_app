@@ -1,0 +1,129 @@
+.container {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.backButton {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.backButton button {
+  padding: 0.5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid rgba(74, 74, 74, 0.5);
+  cursor: pointer;
+  font-size: 15px;
+  transition: 1s ease-in-out;
+  border-radius: 0.5rem;
+  box-shadow: rgba(171, 171, 171, 0.2) 0px 5px 18px;
+  background-color: #121212;
+}
+
+.backButton button:hover {
+  background: rgb(205, 90, 90);
+}
+.mainIamge {
+  flex: 1;
+}
+.mainIamge img {
+  width: 100%;
+  object-fit: cover;
+}
+.time {
+  background: #767676;
+  width: fit-content;
+  padding: 0.4rem 0.7rem;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #ffffff51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.rated {
+  color: #a8a8a8;
+}
+.content h1 {
+  font-size: 50px;
+}
+.content p {
+  font: 16px;
+  line-height: 22px;
+}
+.smallTitle {
+  margin: 0 0 -1rem 0;
+  font-weight: normal;
+  color: #45a196;
+}
+
+.underLine {
+  background: rgb(205, 90, 90);
+  width: 10%;
+  height: 5px;
+  border-radius: 10px;
+}
+.gerneRating {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #2c2c2c;
+  padding: 1rem;
+}
+.rate {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  color: #cbc213;
+}
+.language {
+  color: #45a196;
+  border: 2px solid #45a196;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1032px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem auto;
+    width: 80%;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .backButton {
+    width: 100%;
+    margin: 1rem;
+  }
+  .mainIamge {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+}

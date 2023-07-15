@@ -1,0 +1,138 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+.searchBox {
+  width: 60%;
+  display: flex;
+}
+.searchBox input {
+  flex: 1;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: 1px transparent;
+  padding-left: 1rem;
+  font-size: 16px;
+}
+.searchBox input::after {
+  border: 1px solid rgb(205, 90, 90);
+}
+.searchBox button {
+  padding: 1rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border: 1px transparent;
+  /* padding-left: 1rem; */
+  width: fit-content;
+}
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  width: 100%;
+  font-family: "sans-serif";
+}
+
+.pagePadding {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.pagenation {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.pagenation button {
+  padding: 0.5rem;
+}
+
+.favorite {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+}
+.favoriteList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.searchKeyword {
+  margin-top: 2rem;
+}
+
+.searchKeyword span {
+  color: rgb(205, 90, 90);
+}
+.underLineBox {
+  background: rgb(205, 90, 90);
+  width: 10%;
+  height: 5px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 1rem;
+  }
+  .main h1 {
+    text-align: center;
+  }
+  .searchBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchBox input {
+    flex: 1;
+    border-radius: 2rem;
+    width: 100%;
+    border: 1px transparent;
+    padding: 1rem;
+    font-size: 16px;
+  }
+  .searchBox input::after {
+    border: 1px solid rgb(205, 90, 90);
+  }
+  .searchBox button {
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: 1px transparent;
+    width: fit-content;
+  }
+  .favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+  }
+
+  .pagePadding {
+    padding: 0 1.5rem;
+    gap: 2rem;
+  }
+
+  .favorite {
+    width: 100%;
+  }
+
+  .searchKeyword {
+    font-size: 25px;
+  }
+}
