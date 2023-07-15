@@ -43,18 +43,18 @@ const Card = ({ movie }) => {
           }
           alt="thumbnail"
           onClick={handleOpenMovie}
-          id={movie.imdbID}
-          name={movie.Title}
+          id={movie && movie.imdbID}
+          name={movie && movie.Title}
           width={500}
           height={500}
         />
         <div className={`${styles.movieType}`}>
-          {movie.Type} ↔ {movie.Year}
+          {movie.Type} ↔ {movie && movie.Year}
           {!isFavorite ? (
             <button
               type="button"
               onClick={handleAddToFavorite}
-              id={movie.imdbID}
+              id={movie && movie.imdbID}
             >
               <RxHeart />
             </button>
@@ -63,7 +63,7 @@ const Card = ({ movie }) => {
               type="button"
               className={`${styles.isFavorite}`}
               onClick={handleRemoveFromFavorite}
-              id={movie.imdbID}
+              id={movie && movie.imdbID}
             >
               <RxHeartFilled />
             </button>
@@ -71,7 +71,7 @@ const Card = ({ movie }) => {
         </div>
       </div>
       <div className={`${styles.description}`}>
-        <div className={`${styles.movieTitle}`}>{movie.Title}</div>
+        <div className={`${styles.movieTitle}`}>{movie && movie.Title}</div>
       </div>
     </div>
   );
