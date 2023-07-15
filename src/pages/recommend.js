@@ -70,7 +70,7 @@ export default function Recommend() {
 
   useEffect(() => {
     getRecommendedMovies();
-  }, []);
+  }, [getRecommendedMovies]);
 
   return (
     <>

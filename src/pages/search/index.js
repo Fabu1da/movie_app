@@ -29,7 +29,7 @@ const SearchPage = () => {
         `http://www.omdbapi.com/?apikey=${key}&s=${searchName}&page=${currentPage}`
       )
       .then((movies) => setMovies(movies.data));
-  }, [currentPage]);
+  }, [currentPage, searchName]);
 
   return (
     <div className={`${styles.pagePadding}`}>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./movie.module.css";
 import { AiFillStar, AiFillClockCircle, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
@@ -18,7 +19,7 @@ const Movie = (data) => {
       </div>
       <div className={`${styles.container}`}>
         <div className={`${styles.mainIamge}`}>
-          <img src={data.data.Poster} alt="" />
+          <Image src={data.data.Poster} alt="" width={500} height={500} />
         </div>
         <div className={`${styles.content}`}>
           <h1>{data.data.Title}</h1>
