@@ -57,7 +57,7 @@ export async function getServerSideProps(context) {
   const id = context.query.movieID;
   const key = process.env.NEXT_PUBLIC_API_KEY;
   const rsponse = await fetch(
-    `http://www.omdbapi.com/?apikey=${key}&i=${id}&plot=full`
+    `http://www.omdbapi.com/?apikey=2aa72e41&i=${id}&plot=full`
   );
   const data = await rsponse.json();
 

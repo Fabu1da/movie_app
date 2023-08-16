@@ -26,7 +26,7 @@ const SearchPage = () => {
     const key = process.env.NEXT_PUBLIC_API_KEY;
     axios
       .get(
-        `http://www.omdbapi.com/?apikey=${key}&s=${searchName}&page=${currentPage}`
+        `//www.omdbapi.com/?apikey=${key}&s=${searchName}&page=${currentPage}`
       )
       .then((movies) => setMovies(movies.data));
   }, [currentPage, searchName]);
