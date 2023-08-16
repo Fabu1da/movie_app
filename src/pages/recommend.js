@@ -25,7 +25,7 @@ export default function Recommend() {
     const endTime = Number(localStorage.getItem("START_TIME"));
 
     axios
-      .get(`http://www.omdbapi.com/?apikey=${key}&s=${searchName}`)
+      .get(`http://www.omdbapi.com/?apikey=2aa72e41&s=${searchName}`)
       .then((allmovie) => {
         let page = Math.ceil(allmovie.data.totalResults / 10);
         const randomPage = Math.floor(Math.random() * page) + 1;
