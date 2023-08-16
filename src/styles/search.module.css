@@ -19,8 +19,9 @@
   border: 1px transparent;
   padding-left: 1rem;
   font-size: 16px;
+  font-size: 20px;
 }
-.searchBox input::after {
+.searchBox input:focus {
   border: 1px solid rgb(205, 90, 90);
 }
 .searchBox button {
@@ -30,6 +31,13 @@
   border: 1px transparent;
   /* padding-left: 1rem; */
   width: fit-content;
+  cursor: pointer;
+  background: #347e75;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .movieList {
@@ -112,8 +120,11 @@
   .searchBox button {
     padding: 1rem 3rem;
     border-radius: 2rem;
-    border: 1px transparent;
+    border: 1px solid #45a196;
     width: fit-content;
+    background: #45a196;
+    color: white;
+    cursor: pointer;
   }
   .favorite {
     display: flex;

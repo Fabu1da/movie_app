@@ -78,6 +78,10 @@ export default function Recommend() {
         <title>OMDB Browser - Recommendations</title>
         <meta name="description" content="Get movie recommendations." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="upgrade-insecure-requests"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>

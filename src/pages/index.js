@@ -4,6 +4,7 @@ import styles from "@/styles/search.module.css";
 import { useState, useContext } from "react";
 import { useRouter } from "next/router";
 import { favoriteContext } from "./_app";
+import { RiSearchLine } from "react-icons/ri";
 import Card from "./card/card";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -43,11 +44,14 @@ export default function Search() {
             value={search}
             placeholder="Search..."
           />
-          <button className="">Search</button>
+          <button className="buttonSearch">
+            <RiSearchLine />
+            Search
+          </button>
         </form>
 
         <div className={`${styles.favorite}`}>
-          <h1>Your favorite movies</h1>
+          <h1>My Watch List</h1>
           <div className={`${styles.underLineBox}`} />
           <div className={`${styles.favoriteList}`}>
             {favorite.length !== 0 ? (
