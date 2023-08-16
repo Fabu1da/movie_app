@@ -23,12 +23,15 @@ const SearchPage = () => {
   };
 
   useEffect(() => {
-    const key = process.env.NEXT_PUBLIC_API_KEY;
-    axios
-      .get(
+    // const key = process.env.NEXT_PUBLIC_API_KEY;
+    const searchedMovie = async () => {
+      const movies = await axios.get(
         `//www.omdbapi.com/?apikey=2aa72e41&s=${searchName}&page=${currentPage}`
-      )
-      .then((movies) => setMovies(movies.data));
+      );
+      setMovies(movies.data);
+      // .then((movies) => setMovies(movies.data));
+    };
+    searchedMovie();
   }, [currentPage, searchName]);
 
   return (
